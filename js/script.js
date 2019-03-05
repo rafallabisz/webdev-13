@@ -53,25 +53,6 @@ logo.addEventListener('click', scrollTo);
 //transparent menu
 
 const nav = document.querySelector('.nav');
-// window.onscroll = () => {
-// nav.classList.toggle('transp', window.pageYOffset > 0);
-// nav.classList.toggle('transp', window.scrollY > 0);
-// menu.classList.toggle('transp', window.pageYOffset > 0);
-// menu.classList.toggle('transp', window.scrollY > 0);
-// }
-
 window.addEventListener('scroll', function () {
     nav.classList.toggle('transp', window.scrollY > 0);
 })
-
-// window.addEventListener('scroll', function () {
-//     if (window.scrollY <= 0) {
-//         nav.style.backgroundColor = 'transparent';
-//         nav.style.position = 'static';
-//         menu.style.backgroundColor = 'transparent';
-//     } else {
-//         nav.style.backgroundColor = '#00b8cc';
-//         nav.style.position = 'fixed';
-//         menu.style.backgroundColor = '#00b8cc';
-//     }
-// })
